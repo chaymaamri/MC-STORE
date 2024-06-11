@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="styleform.css">
+    <style>
+    body {
+    background-image: url('form1.png') ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    width: 1220px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    ;
+    color: #420621;
+}</style>
+</head>
+
+<body>
+    <br><br><br><br>
+    <nav>
+        <ul>
+            <li><a href="index.html"> <img src="logo2.png"> </a></li>
+            <li>
+                <!---<form action="recherche_produit.php" method="GET"><input type="search" placeholder="Search...">
+                    <button type="submit"class="button">RECHERCHE</button>
+                </form>--->
+            </li>
+            <li><a href="#categories">CATEGORIES</a></li>
+            <li><a href="about.html">A PROPOS DE NOUS</a></li>
+            <li><a href="account.html">CONNEXION</a></li>
+            <li>
+                <a id="cart" href="#" class="cart-icon">
+                    <span class="cart-count">
+                        <img src="panier1.png" class="img">
+                        <span id="cart-counter">0</span> 
+                    </span>
+                    </a>
+            <li><a href="admin.html">Espace Admin</a></li>
+            </li>
+        </ul>
+    </nav>
+    <center>
+    <h1>Espace Admin</h1>
+
+<h2>Afficher tous les produits</h2>
+<form action="affichage_produits.php" method="GET">
+    <input type="submit" value="Afficher tous les produits">
+</form>
+<table>
+<h2>Ajouter un produit</h2>
+<form action="ajout_produit.php" method="POST">
+   <tr><td><label for="id">ID :</label></td>
+    <td><input type="text" id="id" name="id" required><br></td></tr> 
+    <tr><td><label for="nom">Nom :</label></td>
+    <td><input type="text" id="nom" name="nom" required><br></td></tr>
+    <tr><td><label for="prix">Prix :</label></td>
+    <td><input type="text" id="prix" name="prix" required><br></td></tr>
+    <tr><td><label for="description">Description :</label></td>
+    <td><textarea id="description" name="description" required></textarea><br></td></tr>
+   <tr><td colspan="2"><input type="submit" value="Ajouter le produit"></td></tr> 
+</form>
+</table>
+
+<table>
+
+<h2  style="color: rgb(255, 255, 255)";>Mettre à jour un produit</h2>
+<form action="mise_a_jour_produit.php" method="POST">
+   <tr><td><label for="code" style="color: rgb(255, 255, 255)">ID :</label></td> 
+    <td><input type="text" id="id" name="ID" required><br></td></tr> 
+    <tr><td><label for="prix_maj" style="color: rgb(255, 255, 255)">Nouveau prix :</label></td>
+    <td><input type="text" id="prix_maj" name="prix_maj" required><br></td></tr>
+    <tr><td><input type="submit" value="Mettre à jour"></td>
+    <td><input type="reset" value="Annuler"><br></td></tr> 
+</form>
+</table>
+
+<h2>Supprimer un produit</h2>
+<table>
+<form action="suppression_produit.php" method="GET">
+    <tr><td><label for="id_supprimer">ID :</label></td>
+    <td><input type="text" id="id_supprimer" name="id" required><br></td></tr>
+    <tr><td colspan="2"><input type="submit" value="Supprimer le produit"></td></tr>  
+</form>
+</table>
+
+<h2>Rechercher un produit</h2>
+<form action="recherche_produit.php" method="GET">
+    <label for="recherche_nom">Nom du produit :</label>
+    <input type="text" id="recherche_nom" name="recherche_nom">
+    <input type="submit" value="Rechercher">
+</form>
+
+</center>
+</table>
+</body>
+
+</html>

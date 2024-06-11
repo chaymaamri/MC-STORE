@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscription / Connexion</title>
+    <link rel="stylesheet" href="styleform.css">
+    <style>
+        body {
+            background-image: url('form.png');
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+            width: 1220px;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            ;
+            color: #420621;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br><br>
+    <nav>
+        <ul>
+            <li><a href="index.html"> <img src="logo2.png"> </a></li>
+            <li>
+            <!---<form action="recherche_produit.php" method="GET"><input type="search" placeholder="Search...">
+                                <button type="submit">RECHERCHE</button> -->
+                </form>
+            </li>
+            <li><a href="#categories">CATEGORIES</a></li>
+            <li><a href="about.html">A PROPOS DE NOUS</a></li>
+            <li><a href="account.html">CONNEXION</a></li>
+            <li>
+                <a id="cart" href="panier.php" class="cart-icon">
+                    <span class="cart-count">
+                        <img src="panier1.png" class="img">
+                        <span id="cart-counter">0</span> <!-- Compteur initialisé à 0 -->
+                    </span>
+                </a>
+            <li><a href="admin.html">Espace Admin</a></li>
+            </li>
+        </ul>
+    </nav>
+    <h2>Inscription</h2>
+    <form action="inscription.php" method="post">
+        <label for="nom_utilisateur">Nom d'utilisateur :</label><br>
+        <input type="text" id="nom_utilisateur" name="nom_utilisateur" required><br>
+        <label for="email">Adresse e-mail :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="mot_de_passe">Mot de passe :</label><br>
+        <input type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+        <input type="submit" value="S'inscrire">
+    </form>

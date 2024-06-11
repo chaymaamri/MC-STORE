@@ -1,0 +1,229 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    width: 1220px;
+    box-sizing: border-box;
+    font-family: Georgia,'Times New Roman',Times, serif; ;
+    color: #420621;
+}
+h1{
+    text-align:center;
+}
+.couv {
+    background: url('plan2.gif') 80% / cover no-repeat;
+    margin-bottom: 20px;
+    width:1400px;
+    height: 560px;
+}
+.container-11,
+.container-9,
+.container-21 {
+    margin: 0 73px 124px 130px;
+    display: flex;
+    flex-direction: row;
+    width: 1243px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+        
+}
+.rectangle-12 {
+    border-radius: 40px;
+        background: url('rectangle12.png')50% / cover no-repeat;
+        width: 320px;
+        height: 260px;
+        border-radius: 40px;
+        background-size: cover;
+}
+.rectangle-13 {
+    border-radius: 40px;
+        background: url('rectangle13.png')50% / cover no-repeat;
+        width: 320px;
+        height: 260px;
+        border-radius: 40px;
+        background-size: cover;
+}
+.rectangle-14 {
+    border-radius: 40px;
+    background: url('rectangle14.png')50% / cover no-repeat;
+    width: 320px;
+    height: 260px;
+    border-radius: 40px;
+    background-size: cover;
+}
+
+.rectangle-15 {
+    border-radius: 40px;
+    background: url('rectangle15.png')50% / cover no-repeat;
+    margin: 0 62px 1px 0;
+    margin-right: 68px;
+    width: 300px;
+    height: 260px;
+    border-radius: 40px;
+    background-size: cover;
+}
+.rectangle-16 {
+    border-radius: 40px;
+    background: url('rectangle16.png')50% / cover no-repeat;
+    margin: 1px 68px 0 0;
+    margin-right: 68px;
+    width: 300px;
+    height: 260px;
+    border-radius: 40px;
+    background-size: cover;
+}
+
+.rectangle-17 {
+    border-radius: 40px;
+    background: url('rectangle17.png')50% / cover no-repeat;
+    margin-bottom: 1px;
+    margin-right: 68px;
+    width: 300px;
+    height: 260px;
+    border-radius: 40px;
+    background-size: cover;
+}
+
+.rectangle-5 {
+    border-radius: 40px;
+        background: url('rectangle5.png')50% / cover no-repeat;
+        width: 320px;
+        height: 270px;
+        border-radius: 40px;
+        background-size: cover;
+
+}
+.rectangle-9 {
+    border-radius: 40px;
+        background: url('rectangle9.png')50% / cover no-repeat;
+        width: 320px;
+        height: 270px;
+        border-radius: 40px;
+        background-size: cover;
+    }
+
+.rectangle-10 {
+    border-radius: 40px;
+    background: url('rectangle10.png')50% / cover no-repeat;
+    width: 320px;
+    height: 270px;
+    border-radius: 40px;
+    background-size: cover;
+}
+.rectangle-22,
+.rectangle-23,
+.rectangle-24
+ {
+    background: linear-gradient(180deg, #fadce5 3.6%, #f8ebe6 100%);
+    margin: 0 3px 102px 0;
+    width: 1402px;
+    height: 93px;
+}
+.container-20 {
+    background-color: rgb(255, 207, 231);
+    position: relative;
+    margin-right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 27px 119.2px 24px 92.1px;
+    width: 1402px;
+    box-sizing: border-box;
+}
+table {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+td {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+nav {
+    background-color: rgba(49, 24, 32, 0.726);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+nav ul li a img {
+    height: 130px;
+    width: auto;
+}
+.img{
+    height: 80px;
+        width: auto;
+}
+.cart-icon {
+    height: 10px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+.button {
+    margin-top: 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        background-color: #af4c82;
+        color: white;
+        cursor: pointer;
+    }
+    
+.price {
+        margin-top: 5px;
+    }
+
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    }
+
+#cart-counter {
+    vertical-align: top ;
+    /* Alignement avec le haut du conteneur */
+}

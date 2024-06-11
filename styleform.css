@@ -1,0 +1,142 @@
+
+
+h1 {
+    text-align: center;
+}
+
+
+table {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+td {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: rgba(49, 24, 32, 0.726);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li:last-child {
+    margin-left: auto;
+}
+
+nav ul li a img {
+    height: 130px;
+    width: auto;
+}
+
+.img {
+    height: 80px;
+    width: auto;
+}
+
+.cart-icon {
+    height: 10px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #af4c82;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+#cart-counter {
+    vertical-align: top;
+   
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FFD1DC;
+    padding: 20px;
+    border: 1px solid #D6B9C9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF78B2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF5E9A;
+}
